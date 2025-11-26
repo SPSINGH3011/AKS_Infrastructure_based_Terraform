@@ -7,7 +7,7 @@ resource_groups = {
 
 container_registries = {
   acr1 = {
-    name                = "prod-aksacr007"
+    name                = "prodaksacr"
     resource_group_name = "prod-aks-rg"
     location            = "West US"
     sku                 = "Standard"
@@ -112,7 +112,7 @@ kubernetes_clusters = {
   aks1 = {
     ingress_application_gateway_name = "prod-aks-appgw"
     resource_group_name              = "prod-aks-rg"
-    container_registry_name          = "prod-aksacr007"
+    container_registry_name          = "prodaksacr"
     acr_pull_role_name               = "AcrPull"
     skip_aad_check                   = true
     name                             = "prod-aks-aks"
